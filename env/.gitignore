@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+__pycache__/
+.vscode/
+templates/ignore
+instance/data.db
+harry.py

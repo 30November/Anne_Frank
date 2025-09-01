@@ -47,7 +47,7 @@ def main():
             todo.id = session["id"]
         db.session.add(todo)
         db.session.commit()
-        return redirect('/') #very important ... confirm sub gets data added
+        return redirect('/') 
     
     id = session.get("id",0)
     return render_template("harry.html",MyTodo=Note.query.filter_by(id=id).all(),user = User.query.get(id))

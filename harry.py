@@ -17,7 +17,7 @@ class Note(db.Model):
     id = db.Column(db.Integer,default=0)
     title = db.Column(db.String(50),nullable=False)
     desp = db.Column(db.String(200),nullable=False)
-    date = db.Column(db.Date,default=date.today())
+    date = db.Column(db.Date,default=date.today)
 
 
 class User(db.Model):
